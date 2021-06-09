@@ -6,12 +6,13 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=775626b7bc958bdcc525161f725ece0f \
 
 inherit deploy
 
-COMPATIBLE_MACHINE = '(sama5d3-xplained|sama5d3-xplained-sd|at91sam9x5ek|at91sam9x5ek-sd|sama5d4-xplained|sama5d4-xplained-sd|sama5d2-xplained|sama5d2-xplained-sd|sama5d2-xplained-emmc|sama5d2-ptc-ek|sama5d2-ptc-ek-sd|sama5d27-som1-ek|sama5d27-som1-ek-sd|sama5d2-icp-sd|sam9x60ek|sam9x60ek-sd|sama5d27-wlsom1-ek-sd|sama7g5ek)'
+COMPATIBLE_MACHINE = '(ncx1-mk1|ncx1-mk1-sd|sama5d3-xplained|sama5d3-xplained-sd|at91sam9x5ek|at91sam9x5ek-sd|sama5d4-xplained|sama5d4-xplained-sd|sama5d2-xplained|sama5d2-xplained-sd|sama5d2-xplained-emmc|sama5d2-ptc-ek|sama5d2-ptc-ek-sd|sama5d27-som1-ek|sama5d27-som1-ek-sd|sama5d2-icp-sd|sam9x60ek|sam9x60ek-sd|sama5d27-wlsom1-ek-sd|sama7g5ek)'
 
-SRC_URI = "git://github.com/linux4sam/dt-overlay-at91.git;protocol=https"
+SRC_URI = "git://github.com/devcabsy/dt-overlay-at91.git;protocol=https"
 
 PV = "1.0+git${SRCPV}"
-SRCREV = "b4383488119b298940ced981eadf5d1765581fa9"
+#SRCREV = "f220ab98a84d08611ad11b585b4be9161879092c"
+SRCREV = "3e7e1ec31b1f632ac337034bb73faaf69d0e748f"
 
 DEPENDS = "virtual/kernel u-boot-mkimage-native dtc-native"
 
